@@ -1,0 +1,431 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+   /*Header part*/
+.main_menu ul li a {
+    padding: 15px 9px;
+    }
+.dis_news_content.dis1-news {
+    padding-bottom: 175px;
+}
+.dis_news_content.dis3-news {
+    padding-bottom: 90px;
+}
+.footer_ara {
+    padding: 70px 0;
+}        
+    
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+     /*Header Part*/
+ .logo img {
+    margin-top: 30px;
+}   
+ .main_menu ul li a {
+    padding: 30px 6px;
+    font-weight: 500;
+    font-size: 14px; 
+}   
+    /*Banner Part*/
+.banner_content h1 {
+    font-size: 30px;
+    margin-top: 125px;
+}
+.btn {
+    padding: 13px 50px;
+    margin-bottom: 125px;
+}
+    
+    /*Discover Part*/ 
+.discover_content i {
+    margin-left: 276px;
+    margin-top: -50px;
+    font-size: 30px;
+}
+.discover_area {
+    padding: 50px 0;
+}
+.section_title h5 {
+    font-size: 25px;
+}
+ .section_title h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}   
+ .discover_content h1 {
+    font-size: 30px;
+}   
+    /*Curiser*/
+.content_sport {
+    padding: 40px 0;
+}
+ .content_sport h4 {
+    font-size: 16px;
+} 
+.content_cruiser h2 {
+    font-size: 126px;
+    margin-top: -124px;
+}
+.content_cruiser img {
+    margin-top: -86px;
+}
+      /*Scooter*/
+ .scooter {
+    padding: 40px 0;
+}
+ .scooter h4 {
+    font-size: 14px;
+} 
+.index_opacity h2 {
+    font-size: 126px;
+    margin-bottom: -115px;
+}
+    /*Discover New*/
+    
+.dis_news_setion h5 {
+    font-size: 20px;
+}
+.dis_news_setion h1 {
+    font-size: 30px;
+} 
+ .dis_news_content h5 {
+    padding: 12px;
+    font-size: 16px;
+}
+.dis_news_content h3 {
+    padding: 0px 12px;
+    font-size: 16px;
+}
+.dis_news_content {
+    padding-bottom: 230px;
+}
+.dis_news_content.dis1-news {
+    padding-bottom: 208px;
+}
+.dis_news_content.dis3-news {
+    padding-bottom: 53px;
+}
+.dis_news_content.dis4-news {
+    padding-bottom: 263px;
+}
+.dis_news_content.dis6-news {
+    padding-bottom: 20px;
+}
+.Discover_News {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+    /*Footer*/
+
+  .footer_icon ul li a {
+    font-size: 25px;
+    padding: 0px 10px;
+} 
+.footer_ara {
+    padding: 50px 0;
+}
+/*============ Multi page Bikes CSS Part Start =============== */    
+.motorbike_content h1 {
+    color: #fff;
+    font-size: 29px;
+}
+.b_c_content h3 {
+    font-size: 25px;
+}
+.b_gixxer h5 {
+    font-size: 15px;
+}    
+.b_in_content.text-center h5 {
+    font-size: 20px;
+}
+.b_in_content h2 {
+    font-size: 100px;
+    margin-top: -119px;
+    margin-left: -65px;
+}    
+img.img-fluid.cruser_img {
+    margin-top: -47px;
+}
+.suzuki_opacity h2 {
+    font-size: 100px;
+}
+/*============ Multi page Contact CSS Part Start =============== */
+    .leat_content h5 {
+    color: #6b6b6b;
+    font-size: 16px;
+} 
+.leat_content h5 {
+    font-size: 18px;
+}    
+ .leat_content h1 {
+    font-size: 30px;
+}   
+label {
+    font-size: 16px;
+} 
+ #full_name, #email_address, #contact_no {
+    height: 40px;
+}
+/*============ Multi page Delears CSS Part Start =============== */
+.delears_content h1 {
+    color: #fff;
+    font-size: 30px;
+}
+/*============ Multi page Financing CSS Part Start =============== */
+.financing_buy {
+    padding: 50px 0;
+}    
+/*============ Multi page Suz_New CSS Part Start =============== */
+.suz_news {
+    padding: 50px 0;
+}    
+    
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  /*Header Part*/
+.mean-container a.meanmenu-reveal {
+    margin-top: -37px;
+}
+     /*Banner Part*/
+.banner_content h1 {
+    font-size: 25px;
+    margin-top: 115px;
+}
+.btn {
+    padding: 8px 20px;
+    margin-bottom: 115px;
+}  
+    
+    /*Disvover Part*/
+.discover_area {
+    padding: 15px 0;
+}
+.section_title h5 {
+    font-size: 20px;
+    }
+.section_title h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+discover_content {
+    margin-bottom: 16px;
+}
+.discover_content h1 {
+    margin-top: -45px;
+    font-size: 25px;
+    font-weight: 500;
+}
+    .discover_content i {
+    margin-left: 248px;
+    margin-top: -47px;
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+}
+      /*Curiser Part*/
+.section1 h3 {
+    padding: 10px;
+}   
+.content_cruiser {
+    padding: 10px 0;
+}
+.section2 h3 {
+    padding: 10px;
+}
+.content_sport {
+    padding: 25px 0;
+}
+.content_sport h4 {
+    font-size: 16px;
+}
+.content_cruiser h2 {
+    font-size: 30px;
+    margin-top: -62px;
+}
+.content_cruiser img {
+    margin-top: 0px;
+}
+.index_opacity h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.content_sport h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.scooter h4 {
+    margin-bottom: 0;
+}
+      /*Seooter Part*/
+.scooter {
+    padding: 25px 0;
+}
+.scooter h4 {
+    font-size: 16px;
+}
+      /*Discover New Part*/
+.Discover_News {
+    padding: 30px 0;
+}
+.dis_news_setion h5 {
+    font-size: 20px;
+}    
+.dis_news_setion h1 {
+    font-size: 25px;
+}
+.dis_news_content {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.dis_news_content.dis3-news {
+    padding-bottom: 150px;
+}
+    .dis_news_content.dis5-news {
+    padding-bottom: 40px;
+}
+.dis_news_content.dis6-news {
+    padding-bottom: 45px;
+}
+      /*Footer Part*/
+.footer_content {
+    text-align: center;
+}
+.footer_icon ul li a {
+    font-size: 25px;
+    padding: 0px 10px;
+}
+ .footer_content p {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}  
+.footer_content1 {
+    text-align: center;
+}
+.footer_content1 p {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.footer_ara {
+    padding: 30px 0;
+}
+/*============ Multi page Bikes CSS Part Start =============== */ 
+.motorbike_area {
+    padding: 30px 0;
+}
+.motorbike_content h1 {
+    color: #fff;
+    font-size: 25px;
+}    
+ .b_c_content h3 {
+    font-size: 20px;
+} 
+.bick_intruder {
+    padding: 30px 0;
+}   
+.b_in_content.text-center h5 {
+    font-size: 16px;
+}    
+.b_s_content h3 {
+    font-size: 25px;
+}    
+.bick_gixxer {
+    padding: 30px 0;
+}    
+.b_gixxer h5 {
+    font-size: 16px;
+}
+.b_in_content h2 {
+    font-size: 30px;
+    margin-top: -50px;
+    margin-left: 0;
+}
+.suzuki_opacity h2 {
+     font-size: 31px;
+    margin-bottom: 25px;
+}
+.b_gixxer img {
+    margin-top: -15px;
+}
+.b_in_content img {
+    margin-top: -56px;
+}
+    img.img-fluid.cruser_img {
+      margin-top: 0;
+}
+/*============ Multi page Contact CSS Part Start =============== */
+    section.leat_us {
+    padding: 30px 0;
+}
+   .leat_content h5 {
+    color: #6b6b6b;
+    font-size: 16px;
+}    
+.leat_content h1 {
+    font-size: 20px;
+}
+label {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.btn-form {
+    padding: 10px 40px;
+}    
+.customer_s h5 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+/*============ Multi page Delears CSS Part Start =============== */
+.delears_content h1 {
+    color: #fff;
+    font-size: 30px;
+}
+input#location_name {
+    padding: 5px;
+    margin-bottom: 15px;
+}    
+select {
+    padding: 5px;
+    margin-bottom: 15px;
+} 
+/*============ Multi page Financing CSS Part Start =============== */
+.financing_buy {
+    padding: 30px 0;
+}    
+.f-buy.text-center h5 {
+    margin-bottom: 0;
+}
+/*============ Multi page Suz_New CSS Part Start =============== */
+.suz_news {
+    padding: 30px 0;
+} 
+/*============ Multi page Services CSS Part Start =============== */
+.maintenanc {
+    padding: 30px 0;
+}
+.maintenanc_content h4 {
+    font-size: 16px;
+    margin-bottom: 19px;
+}
+    
+ 
+    
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}

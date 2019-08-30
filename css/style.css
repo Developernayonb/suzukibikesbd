@@ -1,0 +1,848 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: nayonbabu62@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. bikes
+5. services
+6. bike financing
+7. news
+8. find dealers
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:200,300,400,500,600,700&display=swap');
+ body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #7e7e7e;
+	margin-bottom: 30px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+    color: #6B6B6B;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+
+.btn {
+    -moz-user-select: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 16px 85px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 0.5s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-bottom: 200px;
+}
+.btn:hover{
+    color: #444;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #444;
+	color: #fff
+}
+
+/* scrollUp */
+#scrollUp {
+	background: #444;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+}
+#scrollUp:hover {
+	background: #888;
+}
+
+/*============ Header Code CSS Part Start =============== */
+.header_area {
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    z-index: 9;
+}
+.logo img {
+    margin-top: 5px;
+}
+.main_menu ul li {
+    display: inline;
+}
+
+.main_menu ul li a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 15px;
+    transition: .5s;
+}
+.main_menu ul li a:hover{
+    text-decoration: underline;
+}
+.header_area.header-sticky.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 5px solid aqua;
+}
+/*============ banne Code CSS Part Start =============== */
+.banner1{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.banner1:after {
+    content: "";
+    background: #000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    z-index: -1;
+}
+.banner_content h1 {
+    font-weight: 900;
+    color: #ffff;
+    font-size: 46px;
+    margin-top: 200px;
+}
+
+.banner_content p {
+    color: #fff;
+    margin-bottom: 45px;
+}
+/*Dots003145*/
+.owl-dot {
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 5px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #fff;
+}
+.owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 45px;
+}
+.owl-dot.active {
+    background: #ffff;
+}
+/*============ Discover Code CSS Part Start =============== */
+.discover_area {
+    padding: 70px 0;
+}
+.section_title h5 {
+    font-weight: 300;
+    color: #504844;
+    font-size: 30px;
+}
+.section_title h1 {
+    font-weight: 900;
+    font-size: 45px;
+    color: #000;
+    margin-bottom: 80px;
+}
+.discover_content {
+    position: relative;
+    transition: .5s;
+    margin-bottom: 27px;
+}
+
+.discover_content:after {
+    position: absolute;
+    content: "";
+    background: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+}
+.discover_content:hover{
+    opacity: .7;
+}
+.discover_content h1 {
+    margin-top: -53px;
+    margin-left: 25px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+}
+.discover_content i {
+    margin-left: 480px;
+    margin-top: -130px;
+    position: absolute;
+    font-size: 35px;
+    color: #fff;
+}
+/*============ CRUISER Code CSS Part Start =============== */
+.criser {
+    padding-right: 15px;
+    padding-left: 0;
+}
+.section1 h3 {
+    background: #3B3B3B;
+    padding: 20px;
+    color: #fff;
+}
+.content_cruiser {
+    background: #6C6C6C;
+    margin-top: -8px;
+}
+.content_cruiser{
+   padding: 50px 0; 
+}
+.content_cruiser h4 {
+    color: #ffff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 72px;
+}
+.content_cruiser h2 {
+    color: #fff;
+    font-size: 151px;
+    opacity: .1;
+    margin-top: -129px;
+}
+.content_cruiser img {
+    margin-top: -90px;
+}
+.btn-one {
+    color: #fff;
+}
+.btn-one:hover {
+    color: #444;
+}
+.cruiser-button i {
+    color: #c6c6c6;
+}
+/*============ SPORT Code CSS Part Start =============== */
+.content_sport {
+    padding: 50px 0;
+}
+.section2 h3 {
+    background: #F2F4F5;
+    padding: 20px;
+    color: #003145;
+}
+.content_sport h4 {
+    color: #003145;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: -50px;
+    margin-bottom: 65px;
+}
+.btn-two {
+    color: #456775;
+}
+.btn-two:hover {
+    color: #444;
+}
+.index_opacity h2 {
+    color: #fff;
+    font-size: 151px;
+    opacity: .1;
+    text-align: center;
+    position: relative;
+    margin-bottom: -150px;
+}
+/*============ scooter Code CSS Part Start =============== */
+.scooter_bg{
+  background: #6C6C6C;
+    margin-top: -8px;   
+}
+.scooter h4 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: -50px;
+    margin-bottom: 60px;
+}
+.scooter {
+    padding: 50px 0;
+}
+/*============ Discover_News Code CSS Part Start =============== */
+.Discover_News {
+    background: #f5f5f5;
+    padding: 100px 0;
+}
+.dis_news_setion {
+    margin-bottom: 50px;
+}
+.dis_news_setion h5 {
+    color: #7E7F7F;
+    font-weight: 400;
+    font-size: 25px;
+}
+.dis_news_content h3 {
+    padding: 0px 16px;
+    font-size: 22px;
+}
+.dis_news_content {
+    background: #fff;
+    padding-bottom: 296px;
+}
+.dis_news_content h5 {
+    color: #013244;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+    line-height: 30px;
+}
+.dis_news_setion h1 {
+    font-size: 45px;
+}
+.dis_news_content h5:hover{
+    text-decoration: underline;
+}
+.dis_news_content p {
+    color: #003145;
+    padding: 0px 16px;
+}
+.dis_news_content.dis3-news {
+    padding-bottom: 195px;
+}
+.dis_news_content.dis5-news {
+    padding-bottom: 265px;
+}
+
+.dis_news_content.dis6-news {
+    padding-bottom: 145px;
+}
+/*============ footer_ara Code CSS Part Start =============== */
+
+.freedom_ara {
+    margin-bottom: 10px;
+}
+
+
+.footer_ara{
+    background: #0D0D0D;
+    padding: 100px 0;
+}
+.footer_content ul li a {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    line-height: 40px;
+    transition: .5s;
+}
+.footer_content ul li a:hover{
+    text-decoration: underline;
+}
+.footer_content h1 {
+    position: relative;
+}
+
+.footer_content h1:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    top: 0px;
+    right: 0;
+    width: 1px;
+    height: 300px;
+}
+.footer_content p {
+    color: #fff;
+}
+.footer_icon ul li {
+    display: inline;
+}
+.footer_icon ul li a{
+    font-size: 30px;
+    padding: 0px 20px;
+    transition: .5s;
+}
+.footer_icon ul li a:hover {
+    color: #013244;
+}
+.footer_content1 img {
+    margin-top: 30px;
+}
+
+.footer_content1 p {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+/*============ Bikes Section Code CSS Part Start =============== */
+.bike_header.header-sticky.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 5px solid aqua;
+}
+.bike_header {
+    background: #121313;
+}
+.motorbike_area {
+    background: #272C2E;
+    padding: 50px;
+}
+.motorbike_content h1 {
+    color: #fff;
+    font-size: 45px;
+}
+/*============ bick_criser.html Code CSS Part Start =============== */
+.bick_criser {
+    background: #F2F4F5;
+    padding: 25px;
+}
+.b_c_content h3 {
+    color: #013244;
+    font-size: 30px;
+}
+.bick_intruder {
+    padding: 50px 0;
+    background: #F7F8F9;
+}
+.b_in_content.text-center h5 {
+    font-size: 19px;
+    color: #013244;
+    font-weight: 400;
+    margin-bottom: 75px;
+}
+a.btn-bick {
+    color: #013244;
+}
+/*============ bick_sport.html Code CSS Part Start =============== */
+ .bick_sport {
+    background: #3B3B3B;
+    padding: 25px;
+}
+.b_s_content h3 {
+    color: #fff;
+    font-size: 30px;
+}
+/*============ bick_gixxer.html Code CSS Part Start =============== */
+.bick_gixxer {
+    padding: 50px 0;
+    background: #6C6C6C;
+}
+.b_gixxer h5 {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+}
+a.btn-gixxer {
+    color: #fff;
+}
+.b_gixxer img {
+    margin-top: 60px;
+}
+img.img-fluid.cruser_img {
+    margin-top: -77px;
+}
+.suzuki_opacity h2 {
+    color: #fff;
+    font-size: 151px;
+    opacity: .1;
+    text-align: center;
+    position: relative;
+    margin-bottom: -150px;
+}
+.b_in_content img {
+    margin-top: 0;
+}
+.b_in_content h2 {
+    color: #013244;
+    font-size: 151px;
+    opacity: .1;
+    margin-top: -129px;
+    margin-left: -54px;
+}
+.cruser_img {
+    margin-top: -77px;
+}
+
+
+
+
+
+
+/*============ BIKE FINANCING Code CSS Part Start =============== */
+
+.f-buy.text-center h5 {
+    color: #504f4f;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.financing_buy {
+    padding: 80px 0;
+}
+.emi_content img {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*============ SUZUKI NEWS Code CSS Part Start =============== */
+.suz_news {
+    padding: 80px 0;
+}
+.nuz_news_content h5 {
+    color: #013244;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+    line-height: 30px;
+    margin-top: 16px;
+}
+.nuz_news_content h5:hover{
+    text-decoration: underline;
+}
+.nuz_news_content p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*============ Delears Code CSS Part Start =============== */
+.delears_content i {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.delears_content h1 {
+    color: #fff;
+    font-size: 45px;
+}
+.delears_content p {
+    color: #fff;
+}
+input#location_name {
+    padding: 10px;
+    border-radius: 2%;
+    border: none;
+    margin-bottom: 20px;
+}
+select {
+    padding: 10px;
+    border-radius: 2%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*============ LEAT-US Code CSS Part Start =============== */
+section.leat_us {
+    padding: 80px 0;
+}
+
+.leat_content h5 {
+    color: #6b6b6b;
+    font-size: 21px;
+}
+#full_name, #email_address, #contact_no {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background: #eee;
+    border: none;
+}
+textarea#message {
+    width: 100%;
+    padding: 10px;
+    background: #eee;
+    border: none;
+    margin-bottom: 50px;
+}
+.btn-form {
+    background: #323232;
+    padding: 17px 80px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.btn-form:hover{
+    background: #eee;
+    color: #323232;
+}
+.customer_s h5 {
+    font-size: 16px;
+    color: #504f4f;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.customer_s p {
+    color: #305866;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*============ Service CSS Part Start =============== */
+.maintenanc {
+    padding: 80px 0;
+}
+
+.maintenanc_content h4 {
+    color: #013244;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+.maintenanc_content h4:hover {
+    border-bottom: 4px solid #1484C8;
+}
