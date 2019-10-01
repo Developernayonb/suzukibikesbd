@@ -3,4 +3,4 @@ suzukibikesbd
 
 
 
-https://mdnayonbabujibon.github.io/suzukibikesbd/.
+https://developernayonb.github.io/suzukibikesbd/
